@@ -1,4 +1,5 @@
-﻿using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
+﻿using KGB_System.Models;
+using Microsoft.AspNetCore.Identity.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore;
 
 namespace KGB_System.Data
@@ -9,5 +10,8 @@ namespace KGB_System.Data
         : base(options)
     {
     }
+
+    public DbSet<Payment> payments { get; set; }
+    public DbSet<Debt> debts { get; set; }
   }
 }
