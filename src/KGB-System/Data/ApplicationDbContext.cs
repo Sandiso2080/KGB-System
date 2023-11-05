@@ -11,7 +11,7 @@ namespace KGB_System.Data
     {
     }
 
-    public DbSet<Payment> payments { get; set; }
-    public DbSet<Debt> debts { get; set; }
+    public DbSet<Payment> Payments { get; set; }
+    public DbSet<Debt> Debts { get; set; }
   }
 }
